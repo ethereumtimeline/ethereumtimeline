@@ -1,0 +1,366 @@
+# Copyright (C) 2013 Go Daddy Quick Setup
+# This file is distributed under the same license as the Go Daddy Quick Setup package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Go Daddy Quick Setup 1.04\n"
+"POT-Creation-Date: 2013-03-08 19:27:48+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
+
+#: classes/class.gd-quicksetup-api.php:154
+msgid "Unknown verb: %s. Try GET or POST"
+msgstr ""
+
+#: classes/class.gd-quicksetup-api.php:189
+msgid "API returned bad status: %d: %s"
+msgstr ""
+
+#: modules/comprehensive-google-map-plugin.php:52
+msgid "Location"
+msgstr ""
+
+#: modules/comprehensive-google-map-plugin.php:72
+msgid "Phone:"
+msgstr ""
+
+#: modules/contact-form-7.php:59
+msgid "Contact"
+msgstr ""
+
+#: modules/contact-form-7.php:79
+msgid "Contact Us"
+msgstr ""
+
+#: modules/reset-db.php:157
+msgid "New WordPress Site"
+msgstr ""
+
+#: modules/theme.php:183 modules/theme.php:366 quick-setup.php:324
+#: quick-setup.php:400
+msgid "Untitled"
+msgstr ""
+
+#: modules/theme.php:281 quick-setup.php:378
+msgid "Gallery"
+msgstr ""
+
+#: modules/theme.php:283
+msgid "Home"
+msgstr ""
+
+#: quick-setup.php:124
+msgid "Add"
+msgstr ""
+
+#: quick-setup.php:125 resources/step3.php:113 resources/step3.php:149
+#: resources/step3.php:185 resources/step3.php:198 resources/step3.php:226
+#: resources/step3.php:294 resources/step3.php:342
+msgid "Remove"
+msgstr ""
+
+#: quick-setup.php:126
+msgid "Building Site..."
+msgstr ""
+
+#: quick-setup.php:127 resources/step3.php:391
+msgid "Publish Website"
+msgstr ""
+
+#: quick-setup.php:272 resources/step1.php:21 resources/step1.php:25
+#: resources/step2.php:22 resources/step2.php:26 resources/step3.php:22
+#: resources/step3.php:26
+msgid "There was a problem fetching the data"
+msgstr ""
+
+#: quick-setup.php:377
+msgid "gallery"
+msgstr ""
+
+#: quick-setup.php:419
+msgid "blog"
+msgstr ""
+
+#: quick-setup.php:420
+msgid "Blog"
+msgstr ""
+
+#. #-#-#-#-#  quick-setup.pot (Go Daddy Quick Setup 1.04)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: quick-setup.php:498 resources/header.php:17
+msgid "Go Daddy Quick Setup"
+msgstr ""
+
+#: quick-setup.php:511 quick-setup.php:523 quick-setup.php:528
+#: quick-setup.php:533
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: quick-setup.php:588
+msgid "Error"
+msgstr ""
+
+#: quick-setup.php:647 tests/test_plugin.php:369
+msgid "<strong>Go Daddy Quick Setup</strong> requires WordPress 3.5 or later"
+msgstr ""
+
+#: quick-setup.php:658
+msgid ""
+"<strong>Go Daddy Quick Setup</strong> will not work on multisite "
+"installations"
+msgstr ""
+
+#: quick-setup.php:701
+msgid "Leave feedback"
+msgstr ""
+
+#: quick-setup.php:702 resources/site-built-banner.php:25
+msgid "Get support"
+msgstr ""
+
+#: resources/build-site-banner.php:17
+msgid "Go Daddy Quick Setup &trade;"
+msgstr ""
+
+#: resources/build-site-banner.php:19
+msgid "Build your WordPress site in just a few clicks."
+msgstr ""
+
+#: resources/build-site-banner.php:21
+msgid "Get Started"
+msgstr ""
+
+#: resources/build-site-banner.php:21
+msgid "No thanks, I'm good."
+msgstr ""
+
+#: resources/filesystem-message.php:11
+msgid ""
+"Quick Setup needs access to install your selected theme and plugins via FTP. "
+"These credentials are <strong><em>never</em></strong> stored or transmitted."
+msgstr ""
+
+#: resources/footer.php:15
+msgid "Copyright"
+msgstr ""
+
+#: resources/footer.php:16
+msgid "GoDaddy.com, LLC."
+msgstr ""
+
+#: resources/footer.php:17
+msgid "All rights reserved."
+msgstr ""
+
+#: resources/site-built-banner.php:19
+msgid "Edit Pages"
+msgstr ""
+
+#: resources/site-built-banner.php:20
+msgid "Write Post"
+msgstr ""
+
+#: resources/site-built-banner.php:23
+msgid "Run Quick Setup\t\tagain"
+msgstr ""
+
+#: resources/site-built-banner.php:24
+msgid "Tell us what you think"
+msgstr ""
+
+#: resources/site-built-banner.php:26
+msgid "Dismiss"
+msgstr ""
+
+#: resources/step1.php:35 resources/step2.php:36 resources/step3.php:89
+msgid "Site"
+msgstr ""
+
+#: resources/step1.php:36 resources/step2.php:37 resources/step3.php:90
+msgid "Theme"
+msgstr ""
+
+#: resources/step1.php:37 resources/step2.php:38 resources/step3.php:91
+msgid "Content"
+msgstr ""
+
+#: resources/step1.php:41
+msgid "1. Choose a Site Type"
+msgstr ""
+
+#: resources/step1.php:61 resources/step1.php:86 resources/step1.php:111
+#: resources/step1.php:136
+msgid "Great for:"
+msgstr ""
+
+#: resources/step1.php:64 resources/step1.php:89 resources/step1.php:114
+#: resources/step1.php:139 resources/step2.php:55
+msgid "Select"
+msgstr ""
+
+#: resources/step2.php:42
+msgid "2. Pick a Theme"
+msgstr ""
+
+#: resources/step2.php:54
+msgid "Preview"
+msgstr ""
+
+#: resources/step2.php:65
+msgid ""
+"Note: You can change your theme at any time, even after your site has "
+"launched, with just a few clicks."
+msgstr ""
+
+#: resources/step2.php:69 resources/step3.php:394
+msgid "Start over"
+msgstr ""
+
+#: resources/step3.php:95
+msgid "3. Select Pages &amp; Create Content"
+msgstr ""
+
+#: resources/step3.php:202
+msgid "Add Images"
+msgstr ""
+
+#: resources/step3.php:235
+msgid "Name or Business"
+msgstr ""
+
+#: resources/step3.php:238
+msgid "Address"
+msgstr ""
+
+#: resources/step3.php:242
+msgid "City"
+msgstr ""
+
+#: resources/step3.php:245
+msgid "State"
+msgstr ""
+
+#: resources/step3.php:248
+msgid "Zip"
+msgstr ""
+
+#: resources/step3.php:251
+msgid "555-555-5555"
+msgstr ""
+
+#: resources/step3.php:257
+msgid "Social networks"
+msgstr ""
+
+#: resources/step3.php:258
+msgid "@twitterhandle"
+msgstr ""
+
+#: resources/step3.php:261
+msgid "http://facebook.com/user.name"
+msgstr ""
+
+#: resources/step3.php:264
+msgid "https://plus.google.com/u/0/0000000000000000/"
+msgstr ""
+
+#: resources/step3.php:289 resources/step3.php:337
+msgid "Custom"
+msgstr ""
+
+#: resources/step3.php:291 resources/step3.php:339
+msgid "Create custom pages for your unique needs."
+msgstr ""
+
+#: resources/step3.php:323
+msgid "Custom Pages"
+msgstr ""
+
+#: resources/step3.php:326
+msgid "Add custom page"
+msgstr ""
+
+#: resources/step3.php:347
+msgid "Page title"
+msgstr ""
+
+#: resources/step3.php:350
+msgid "Page content goes here ..."
+msgstr ""
+
+#: resources/step3.php:360
+msgid "Allow visitors to share your site on their favorite social networks."
+msgstr ""
+
+#: resources/step3.php:376
+msgid "Plug-in Settings (optional)"
+msgstr ""
+
+#: resources/step3.php:387
+msgid ""
+"I understand that clicking \"Publish Website\" will cause my database to be "
+"overwritten."
+msgstr ""
+
+#: resources/step4.php:49
+msgid "Building your site..."
+msgstr ""
+
+#: resources/step4.php:51
+msgid "This may take up to a minute or two. Thanks for your patience."
+msgstr ""
+
+#: resources/step4.php:56
+msgid "Congratulations, your website is live!"
+msgstr ""
+
+#: resources/step4.php:60
+msgid "Check out your new home <br />on the Web."
+msgstr ""
+
+#: resources/step4.php:61
+msgid "View My Website"
+msgstr ""
+
+#: resources/step4.php:68
+msgid "MOBILE OPTIMIZED"
+msgstr ""
+
+#: resources/step4.php:71
+msgid "Don't forget your mobile-friendly site!"
+msgstr ""
+
+#: resources/step4.php:72
+msgid "Grab your phone and go to"
+msgstr ""
+
+#: resources/step4.php:78
+msgid "Go to My Dashboard"
+msgstr ""
+
+#: resources/step4.php:78
+msgid "Tell Us What You Think"
+msgstr ""
+
+#: resources/step4.php:78
+msgid "Get Support"
+msgstr ""
+
+#. #-#-#-#-#  quick-setup.pot (Go Daddy Quick Setup 1.04)  #-#-#-#-#
+#. Plugin URI of the plugin/theme
+#. #-#-#-#-#  quick-setup.pot (Go Daddy Quick Setup 1.04)  #-#-#-#-#
+#. Author URI of the plugin/theme
+msgid "http://www.godaddy.com/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Get your site started in ten minutes by answering some easy questions.  Use "
+"our beautiful themes and popular plugin configurations to get your website "
+"started quickly."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "GoDaddy.com, LLC"
+msgstr ""

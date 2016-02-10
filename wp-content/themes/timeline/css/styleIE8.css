@@ -1,0 +1,20 @@
+.navcal{
+	float:right;
+	position:relative!important;
+}
+.nav {
+	padding-right:20px; 
+}
+.img-rollover {
+	visibility:hidden;
+}
+.h-style:hover .img-rollover  {
+	visibility:visible;
+}
+.h-style:hover .mask {
+	-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=50);
+}
+
+.flex-direction-nav .flex-next {right: -8px!important; margin-right:2px; }
+.flex-direction-nav .flex-prev {left: -8px!important;margin-left:2px;}

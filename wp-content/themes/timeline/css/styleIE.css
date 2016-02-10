@@ -1,0 +1,22 @@
+
+
+.button { -webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px;  }
+
+.b-circle{
+	border-radius: 50%;
+}
+.button.b-circle, .button.b-circle:hover {
+	filter: none;
+}
+.accordion .b-circle{
+
+	 margin-top:8px;
+	 padding-top:4px;
+}
+.nav li {
+	padding: 18px 10px 6px 10px;
+
+}
+#tooltip:after {
+	border-top: 10px solid #fff;
+}

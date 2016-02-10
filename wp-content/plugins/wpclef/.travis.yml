@@ -1,0 +1,43 @@
+# Travis CI Configuration File
+
+# Tell Travis CI we're using PHP
+language: php
+
+# PHP version used in first build configuration.
+php:
+    - "5.6"
+    - "5.5"
+    - "5.4"
+    - "5.3"
+
+# WordPress version used in first build configuration.
+env:
+    - WP_VERSION=master
+    - WP_VERSION=4.4
+    - WP_VERSION=3.9.1
+
+# Clones WordPress and configures our testing environment.
+before_script:
+    - export REPO_SLUG=$(basename $(pwd))
+    - export PLUGIN_SLUG=wpclef
+
+    # fix sendmail
+    - chmod +x tests/setup/fakesendmail.sh
+    - sudo mkdir -p /var/qmail/bin
+    - sudo cp tests/setup/fakesendmail.sh /var/qmail/bin/sendmail
+    - sudo cp tests/setup/fakesendmail.sh /usr/sbin/sendmail
+    - echo 'sendmail_path = "/usr/sbin/sendmail -t -i "' | sudo tee "/home/travis/.phpenv/versions/`php -r 'echo PHP_VERSION;'`/etc/conf.d/sendmail.ini"
+
+    # clone wordpress
+    - git clone --depth=50 --branch="$WP_VERSION" git://develop.git.wordpress.org/ /tmp/wordpress
+    - cd ..
+    - mv "$REPO_SLUG" "/tmp/wordpress/src/wp-content/plugins/$PLUGIN_SLUG"
+    - cd /tmp/wordpress
+    - mysql -e "CREATE DATABASE wordpress_tests;" -uroot
+    - cp wp-tests-config-sample.php wp-tests-config.php
+    - sed -i "s/youremptytestdbnamehere/wordpress_tests/" wp-tests-config.php
+    - sed -i "s/yourusernamehere/travis/" wp-tests-config.php
+    - sed -i "s/yourpasswordhere//" wp-tests-config.php
+    - cd "/tmp/wordpress/src/wp-content/plugins/$PLUGIN_SLUG"
+
+script: phpunit

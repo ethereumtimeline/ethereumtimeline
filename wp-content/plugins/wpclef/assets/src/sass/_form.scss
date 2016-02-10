@@ -1,0 +1,330 @@
+#clef-settings-form {
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .twitter-follow-button {
+        position: relative;
+        top: 4px;
+    }
+
+    .settings-section {
+        &.pro-section {
+            position: relative;
+            display: none;
+            &:before {
+                $height: 30px;
+                width: 80px;
+                height: $height;
+                line-height: $height;
+                background: $green;
+                display: block;
+                content: "PRO";
+                position: absolute;
+                top: 0;
+                right: 0;
+                color: white;
+                font-weight: bold;
+                text-align: center;
+                opacity: .7;
+            }
+        }
+        &.override-settings {
+            .inputs-container {
+                .input-container {
+                    background: none;
+                    padding: 0;
+                    margin: 0;
+                    clear: both;
+                }
+                label {
+                    width: auto;
+                    margin: 0;
+                    line-height: 25px;
+                    font-weight: bold;
+                    padding-left: 10px;
+                    background: #DDD;
+                    padding: 1px 5px;
+                    font-size: 9px;
+                    @include media($tablet) {
+                        width: 100%;
+                        font-size: 12px;
+                    }
+                }
+                input {
+                    float: left;
+                }
+                .generate-override {
+                    float: left;
+                    width: auto;
+                    clear: both;
+                    cursor: pointer;
+                    color: #BBB;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+                .override-buttons {
+                    margin-top: 10px;
+                    clear: both;
+                    .button {
+                        display: inline-block;
+                        text-align: center;
+                        margin-top: 30px;
+                    }
+                }
+            }
+            .preview-container {
+                @include span-columns(4);
+                display: none;
+                img {
+                    margin-top: 15px;
+                    width: 100%;
+                }
+            }
+
+            &.set {
+                .preview-container {
+                    display: block;
+                }
+
+                .override-buttons {
+                    display: block;
+                }
+            }
+        }
+
+        &.support-settings {
+            .preview-container {
+                padding-top: 10px;
+                @include span-columns(4);
+                @include media($tablet) {
+                    display: none;
+                }
+
+                .ftr-preview {
+                    background: #fff;
+                    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+                    padding: 20px;
+                    font-weight: 400;
+                    overflow: hidden;
+                    margin-top: 5px;
+                    a {
+                        margin-top: 20px;
+                    }
+                }
+            }
+
+            .support-html-container {
+                margin-top: 20px;
+                textarea {
+                    width: 400px;
+                    padding: 10px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        &.clef-settings {
+            .inputs-container {
+                label {
+                    @include span-columns(3);
+                }
+                input[type="text"],
+                textarea {
+                    @include span-columns(7);
+                    @include media($tablet) {
+                        @include span-columns(10 of 10);
+                    }
+                }
+            }
+        }
+    }
+
+    .password-settings {
+        min-height: 400px;
+
+        .input-container.custom-roles {
+            .title {
+                display: block;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            .custom-role {
+                label { clear: both; }
+            }
+        }
+
+        #login-form-view {
+            $button-height: 34px;
+            $button-width: 187px;
+            @include span-columns(4);
+            @include media($tablet) {
+                display: none;
+            }
+
+            &.only-clef:not(.embed-clef) {
+                #loginform {
+                    padding: 40px;
+                    & > *:not(.clef-button) {
+                        display: none;
+                    }
+                    .clef-button {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            &.embed-clef {
+                #loginform {
+                    position: relative;
+                    height: 425px;
+                    .clef-button {
+                        display: none;
+                    }
+                    .clef-overlay {
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 100%;
+                        width: 100%;
+                        background: white;
+                        img {
+                            position: absolute;
+                            top: 10px;
+                            left: 10%;
+                            width: 80%;
+                            display: block;
+                        }
+                        div {
+                            display: block;
+                        }
+                    }
+                    .or-container {
+                        display: none;
+                    }
+
+                    .overlay-text {
+                        position: absolute;
+                        width: 100%;
+                        bottom: 10px;
+                        left: 0;
+                        color: #aaa;
+                        text-align: center;
+                    }
+                }
+
+                &.only-clef {
+                    #loginform .overlay-text { display: none; }
+                }
+            }
+
+            #loginform {
+
+                background: #fff;
+                box-shadow: 0 1px 3px rgba(0,0,0,.13);
+                padding: 26px 24px 46px;
+                font-weight: 400;
+                overflow: hidden;
+                margin-top: 5px;
+
+                label {
+                    color: #777;
+                    font-size: 14px;
+                }
+
+                .input {
+                    font-size: 24px;
+                    line-height: 1;
+                    width: 100%;
+                    padding: 3px;
+                    margin: 2px 6px 16px 0;
+                }
+
+                .submit {
+                    float: right;
+                    margin-top: 0;
+                }
+
+                .forgetmenot {
+                    font-weight: 400;
+                    float: left;
+                    margin-bottom: 0;
+                }
+
+                .clef-button {
+                    margin-bottom: 27px;
+                    img {
+                        height: $button-height;
+                        width: $button-width;
+                        margin: auto;
+                        display: block;
+                    }
+
+                    div {
+                        position: absolute;
+                        width: 100%;
+                        top: 50%;
+                        margin-top: 5px;
+                        text-align: center;
+                        display: block;
+                        color: #aaa;
+                        cursor: pointer;
+                        display: none;
+
+                        &:hover {
+                            color: #999;
+                        }
+                    }
+                }
+
+                .clef-overlay {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    #clef-pro-section {
+        display: none;
+        #clef-pro-customization {
+            .preview-container {
+                @include span-columns(4);
+            }
+
+            .button {
+                float: right;
+                margin-left: 10px;
+            }
+
+            #custom-login-view {
+                img {
+                    max-height: 50px;
+                    margin: auto;
+                    margin-top: 20px;
+                    display: block;
+                }
+                p {
+                    border: 1px solid #eee;
+                    margin: 20px;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+
+    .setting-info {
+        font-weight: normal;
+        font-size: 12px;
+        color: #aaa;
+        text-decoration: none;
+        margin-left: 5px;
+
+        &:hover {
+            color: #888;
+        }
+    }
+}
